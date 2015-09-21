@@ -2,3 +2,18 @@ img {
   height:auto;
   width: 25vh;
 }
+.red {
+  color: #FF2222;
+}
+.green{
+  color: #22FF22;
+}
+.white{
+  color: #FFFFFF;
+}
+.black-bg{
+  background-color: #000000;
+}
+.indent{
+  margin: 5vh;
+}
