@@ -220,6 +220,7 @@
 		userData = getUrlVars();
 		console.log(userData);
 		if(userData.username){
+			userData.username = decodeURIComponent(userData.username);
 			document.getElementById('userSpan').innerHTML=userData.username;
 		}
 		if(userData.match && userData.match != 'solo'){
