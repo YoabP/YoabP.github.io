@@ -8,25 +8,25 @@
   <body>
     <h1>Progress Tracking</h1>
     <h3>Noob Level Stuff</h3>
-    <input type="checkbox" checked onclick="return nope()">Create GitHub account.</input><br>
-    <input type="checkbox" checked onclick="return nope()">Create a new GitHub repository form the GitHub web interface.</input><br>
-    <input type="checkbox" checked onclick="return nope()">Create a local repository on your computer.</input><br>
-    <input type="checkbox" checked onclick="return nope()">Clone a repository from GitHub to your computer.</input><br>
-    <input type="checkbox" checked onclick="return nope()">Add a file to your local repository.</input><br>
+    <input type="checkbox" checked onclick="return nope()">Create GitHub account.<br>
+    <input type="checkbox" checked onclick="return nope()">Create a new GitHub repository form the GitHub web interface.<br>
+    <input type="checkbox" checked onclick="return nope()">Create a local repository on your computer.<br>
+    <input type="checkbox" checked onclick="return nope()">Clone a repository from GitHub to your computer.<br>
+    <input type="checkbox" checked onclick="return nope()">Add a file to your local repository.<br>
     <img src="http://i.imgur.com/UAiyadK.png"><br>
-    <input type="checkbox" checked onclick="return nope()">Remove a file from your local repository.</input><br>
+    <input type="checkbox" checked onclick="return nope()">Remove a file from your local repository.<br>
     <img src="http://i.imgur.com/n1MnwQe.png"><br>
-    <input type="checkbox" checked onclick="return nope()">Edit a file via the GitHub web interface.</input><br>
+    <input type="checkbox" checked onclick="return nope()">Edit a file via the GitHub web interface.<br>
     <img src="http://i.imgur.com/0YLb7dZ.png"><br>
-    <input type="checkbox" checked onclick="return nope()">Add a file via the GitHub web interface.</input><br>
+    <input type="checkbox" checked onclick="return nope()">Add a file via the GitHub web interface.<br>
     <img src="http://i.imgur.com/c6K9Eqb.png"><br>
-    <input type="checkbox" checked onclick="return nope()">Delete a file via the GitHub web interface.</input><br>
+    <input type="checkbox" checked onclick="return nope()">Delete a file via the GitHub web interface.<br>
     <img src="http://i.imgur.com/mEJMcdo.png"><br>
-    <input type="checkbox" checked onclick="return nope()">Pull changes from GitHub to your local repository.</input><br>
+    <input type="checkbox" checked onclick="return nope()">Pull changes from GitHub to your local repository.<br>
     <img src="http://i.imgur.com/hwdqXb7.png"><br>
 
     <h3>Basic Level Stuff</h3>
-    <input type="checkbox" checked onclick="return nope()">Check status of your local repository. What are the possible states?</input><br>
+    <input type="checkbox" checked onclick="return nope()">Check status of your local repository. What are the possible states?<br>
     <div class="indent">
     <p>It indictes what branch the repository is currently on.</p>
       <p>It indicates its status compared to remote repositories:</p>
@@ -40,21 +40,30 @@
         <li class='red'>Changes not staged. Untracked files.</li>
         <li class='green'>Staged changes</li>
         <li class='white'>working directory clean. No changes</li>
-        <p>Information based on personal experimentation with git.</p>
       </ul>
+      <p>Information based on personal experimentation with git.</p>
     </div>
-    <input type="checkbox"  onclick="return nope()">How to view the history or log of your repository. Why is this useful?</input><br>
-    <input type="checkbox"  onclick="return nope()">Ensure you understand the states of objects in a repository (untracked, 	unmodified, modified, staged)</input><br>
-    <input type="checkbox"  onclick="return nope()">Push changes to GitHub from your local repository.</input><br>
-    <input type="checkbox"  onclick="return nope()">Pull changes from GitHub to your local repository.</input><br>
-    <input type="checkbox"  onclick="return nope()">Create an use Tags at the local repository level.</input><br>
-    <input type="checkbox"  onclick="return nope()">Push and  pull tags to the remote (GitHub) repository.</input><br>
-    <input type="checkbox"  onclick="return nope()">Setup git aliases for your local configuration.</input><br>
-    <input type="checkbox"  onclick="return nope()">Get git to ignore certain files. Why do we want to do this?</input><br>
-    <input type="checkbox"  onclick="return nope()">Check out how Git is supported in your favourite editor. Does it just show i	information or does it have support for Git commands?</input><br>
+    <input type="checkbox" checked onclick="return nope()">How to view the history or log of your repository. Why is this useful?<br>
+    <div class="indent">
+      <p>git log</p>
+      <p>It is useful since it displays information about commits. You may feel like you need to go back to a previous commit, and this will help in such situation. It also allows to display the author of commits, so it helps tracking contributions. It also can show the branch tree, to get a general picture of branching and merging of versions.</p>
+      <p><em>Lab 10 History. (n.d.). Retrieved September 21, 2015, from http://gitimmersion.com/lab_10.html </em></p>
+    </div>
+    <input type="checkbox"  checked onclick="return nope()">Ensure you understand the states of objects in a repository (untracked, 	unmodified, modified, staged)<br>
+    <input type="checkbox"   onclick="return nope()">Push changes to GitHub from your local repository.<br>
+    <input type="checkbox"   onclick="return nope()">Pull changes from GitHub to your local repository.<br>
+    <input type="checkbox"   onclick="return nope()">Create an use Tags at the local repository level.<br>
+    <input type="checkbox"   onclick="return nope()">Push and  pull tags to the remote (GitHub) repository.<br>
+    <input type="checkbox"   onclick="return nope()">Setup git aliases for your local configuration.<br>
+    <input type="checkbox"   onclick="return nope()">Get git to ignore certain files. Why do we want to do this?<br>
+    <input type="checkbox"  checked onclick="return nope()">Check out how Git is supported in your favourite editor. Does it just show i	information or does it have support for Git commands?<br>
+    <div class="indent">
+      <p>Atom, shows information but does not allow to run commands directly. It shows information on the footer, about changes to the current file, and the current branch. It also shows the files on the file tree in different colors, if they have been modified since last commit. On the line number column, it displays colors when changes are made, staged, and for deletions.</p>
+      <p><em>Sawicki, K. (n.d.). Git Integration. Retrieved September 21, 2015, from http://blog.atom.io/2014/03/13/git-integration.html </em></p>
+    </div>
   </body>
 
-  <script type="text/javascript">
+  <script>
     function nope(){return false};
   </script>
 </html>

@@ -12,8 +12,11 @@ img {
   color: #FFFFFF;
 }
 .black-bg{
-  background-color: #000000;
+  background-color: #333333;
 }
 .indent{
-  margin: 5vh;
+  margin: 1vh 5vh;
+}
+.indent p{
+  margin: 5px;
 }
