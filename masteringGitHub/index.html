@@ -121,6 +121,17 @@
       </div>
     </div>
     <script>
+      function yes(){return true};
+      function god(stuff){
+        x=Math.floor((Math.random() * 100) + 1);
+        if(x==stuff){
+          alert("Hello! You are GOD!!");
+        }
+        else{
+          alert("Hello! NOOB!!");
+
+        }
+      }
       function nope(){return false};
       var fireRef = new Firebase("https://semanai.firebaseio.com/");
       fireRef.on("child_added", function(commit){
