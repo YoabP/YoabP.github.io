@@ -30,3 +30,8 @@ img {
 .unimportant{
   text-decoration: line-through;
 }
+
+#commit {
+  height: 50vh;
+  overflow: auto;
+}
