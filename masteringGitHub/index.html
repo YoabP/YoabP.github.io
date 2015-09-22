@@ -22,9 +22,9 @@
       <input type="checkbox" checked onclick="return nope()">Add a file via the GitHub web interface.<br>
       <img src="http://i.imgur.com/c6K9Eqb.png" alt="add file git interface"><br>
       <input type="checkbox" checked onclick="return nope()">Delete a file via the GitHub web interface.<br>
-      <img src="http://i.imgur.com/mEJMcdo.png" add="delete file git interface"><br>
+      <img src="http://i.imgur.com/mEJMcdo.png" alt="delete file git interface"><br>
       <input type="checkbox" checked onclick="return nope()">Pull changes from GitHub to your local repository.<br>
-      <img src="http://i.imgur.com/hwdqXb7.png" add="pull changes"><br>
+      <img src="http://i.imgur.com/hwdqXb7.png" alt="pull changes"><br>
 
       <h3>Basic Level Stuff</h3>
       <input type="checkbox" checked onclick="return nope()">Check status of your local repository. What are the possible states?<br>
@@ -58,19 +58,41 @@
         <p>staged: Changes have moved to the staging area, and are ready to be commited.</p>
         <p><em>How to get started with GIT and work with GIT Remote Repo. (n.d.). Retrieved September 22, 2015, from https://www3.ntu.edu.sg/home/ehchua/programming/howto/Git_HowTo.html </em></p>
       </div>
-      <input type="checkbox"   onclick="return nope()">Push changes to GitHub from your local repository.<br>
-      <img src="http://i.imgur.com/7njT7gf.png" add="push to Github"><br>
+      <input type="checkbox"  checked onclick="return nope()">Push changes to GitHub from your local repository.<br>
+      <img src="http://i.imgur.com/7njT7gf.png" alt="push to Github"><br>
       <input type="checkbox"   checked onclick="return nope()">Pull changes from GitHub to your local repository.<br>
       <div class="indent"><p>Done on previous section.</p></div>
-      <input type="checkbox"   onclick="return nope()">Create an use Tags at the local repository level.<br>
-      <input type="checkbox"   onclick="return nope()">Push and  pull tags to the remote (GitHub) repository.<br>
-      <input type="checkbox"   onclick="return nope()">Setup git aliases for your local configuration.<br>
-      <input type="checkbox"   onclick="return nope()">Get git to ignore certain files. Why do we want to do this?<br>
-      <input type="checkbox"  checked onclick="return nope()">Check out how Git is supported in your favourite editor. Does it just show i	information or does it have support for Git commands?<br>
+      <input type="checkbox"   checked onclick="return nope()">Create and use Tags at the local repository level.<br>
+      <img src="http://i.imgur.com/hxImDRc.png" alt="local tags"><br>
+      <input type="checkbox"  checked onclick="return nope()">Push and  pull tags to the remote (GitHub) repository.<br>
+      <img src="http://i.imgur.com/YFvO0HI.png" alt="push tags"><br>
+      <div class="indent"><p>Tags can be retrieved from the repo with either fetch or pull and the flag --tags</p></div>
+      <input type="checkbox"   checked onclick="return nope()">Setup git aliases for your local configuration.<br>
+      <img src="http://i.imgur.com/LBElxHo.png" alt="aliases"><br>
+      <input type="checkbox"   checked onclick="return nope()">Get git to ignore certain files. Why do we want to do this?<br>
+      <img src="http://i.imgur.com/47hjDZW.png" alt="gitignore"><br>
+      <div class="indent">
+        <p>The gitignore is ignoring the ignoreFolder. Atom displays ignored files in darker gray. Gitignore is simply ignoring the whole folder with "ignoreFolder/"</p>
+        <p>This is usefull when your project has files that do not need to be under git. Mostly files that are not source or are generated. Binary files usually do not use git tracking.</p>
+      </div>
+      <input type="checkbox"  checked onclick="return nope()">Check out how Git is supported in your favourite editor. Does it just show information or does it have support for Git commands?<br>
       <div class="indent">
         <p>Atom, shows information but does not allow to run commands directly. It shows information on the footer, about changes to the current file, and the current branch. It also shows the files on the file tree in different colors, if they have been modified since last commit. On the line number column, it displays colors when changes are made, staged, and for deletions.</p>
         <p><em>Sawicki, K. (n.d.). Git Integration. Retrieved September 21, 2015, from http://blog.atom.io/2014/03/13/git-integration.html </em></p>
       </div>
+
+      <h3>Intermediate Level Stuff</h3>
+      <h4>DiffMerge</h4>
+      <input type="checkbox" onclick="return nope()">Get DiffMerge to work with your git toolset.<br>
+      <h4>Branching</h4>
+      <input type="checkbox" onclick="return nope()">Work with a partner to fork their repository via GitHub.<br>
+      <input type="checkbox" onclick="return nope()">Now you can modify and work with your own copy of that repository. You can fork anything on GitHub, that is what the community is about!<br>
+      <input type="checkbox" onclick="return nope()">Now since you are working with a partner you can organize to create a pull request so that your modifications on your forked repository go back to her main repository that you forked from.<br>
+      <h4>GitHub Pages</h4>
+      <input type="checkbox" checked onclick="return nope()">You can get free hosting with GitHub Pages. Set up your own page with this.<br>
+      <div class="indent"><p>This document is hosted using git pages.</p></div>
+      <input type="checkbox" onclick="return nope()">To get a full score on this portion use a static website generator like Jekyll, OctoPress, Hexo or any other choice to “build” a site using that publishes to GitHub. Another option is to use GitHub to develop your site but synchronize the built site to some other location.<br>
+
     </div>
     <script>
       function nope(){return false};
