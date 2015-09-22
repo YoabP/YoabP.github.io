@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Semana i | Mastering GitHub</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  </head>
   </head>
   <body>
     <div class="indent">
@@ -102,10 +104,30 @@
       <h4>GitHub Pages</h4>
       <input type="checkbox" checked onclick="return nope()">You can get free hosting with GitHub Pages. Set up your own page with this.<br>
       <div class="indent"><p>This document is hosted using git pages.</p></div>
-      <input type="checkbox" onclick="return nope()">To get a full score on this portion use a static website generator like Jekyll, OctoPress, Hexo or any other choice to “build” a site using that publishes to GitHub. Another option is to use GitHub to develop your site but synchronize the built site to some other location.<br>
+      <input type="checkbox" checked onclick="return nope()">To get a full score on this portion use a static website generator like Jekyll, OctoPress, Hexo or any other choice to “build” a site using that publishes to GitHub. Another option is to use GitHub to develop your site but synchronize the built site to some other location.<br>
+      <div class="indent" id="commit">
+        <p>Using firebase hook, to send commits to firebase, and displayed here. Basically displaying this pages own commits. So meta!</p>
+        <p class="indent" id="commit">
+
+        </p>
+      </div>
     </div>
     <script>
       function nope(){return false};
+      var fireRef = new Firebase("https://semanai.firebaseio.com/");
+      fireRef.on("child_added", function(commit){
+        var ndiv=document.createElement('div');
+        var h4 = document.createElement('h4');
+        h4.innerHTML = commit.child('message').val();
+        var commiterDiv=document.createElement('div');
+        commiterDiv.innerHTML = '<strong>Committer:</strong> '
+          + commit.child('committer').child('name').val()
+          +'('+commit.child('committer').child('username').val()+')'
+          +'['+commit.child('committer').child('email').val()+']';
+        ndiv.appendChild(h4);
+        ndiv.appendChild(commiterDiv);
+        document.getElementById('commit').appendChild(ndiv);
+      });
     </script>
   </body>
 </html>

@@ -20,3 +20,10 @@ img {
 .indent p{
   margin: 5px;
 }
+#commit > div{
+  padding-left: 10px;
+  border: thick solid #0095DD;
+}
+#commit > div > div{
+  font-size: .75em;
+}
