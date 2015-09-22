@@ -27,3 +27,6 @@ img {
 #commit > div > div{
   font-size: .75em;
 }
+.unimportant{
+  text-decoration: line-through;
+}

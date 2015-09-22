@@ -111,11 +111,12 @@
       <input type="checkbox" checked onclick="return nope()">You can get free hosting with GitHub Pages. Set up your own page with this.<br>
       <div class="indent"><p>This document is hosted using git pages.</p></div>
       <input type="checkbox" checked onclick="return nope()">To get a full score on this portion use a static website generator like Jekyll, OctoPress, Hexo or any other choice to “build” a site using that publishes to GitHub. Another option is to use GitHub to develop your site but synchronize the built site to some other location.<br>
-      <div class="indent" id="commit">
+      <div class="indent">
         <p>Using firebase hook, to send commits to firebase, and displayed here. Basically displaying this pages own commits. So meta!</p>
         <p>On a second thought, this also documents changes to other projects on this git page. But still cool.</p>
-        <p class="indent" id="commit">
-
+        <p class="indent" id="commit"></p>
+        <p>WebHook explanation: initially I sent a post request to a server, belonging to a friend, where I added a php page that handled the post and pushed it to firebase.
+          Later I found gitHub offers a service that does pretty much this. So it was changed to use gitHub's own firebase service, since the previous server is better not messed with. It doesn't belong to me and at the moment it stores a startup company's web app, which I have acces to, I'm contributing to it as professional service, but I preffer not abusing it.
         </p>
       </div>
     </div>
@@ -131,8 +132,19 @@
           + commit.child('committer').child('name').val()
           +'('+commit.child('committer').child('username').val()+')'
           +'['+commit.child('committer').child('email').val()+']';
+        var chdiv = document.createElement('div');
+        chdiv.innerHTML="<p><strong>Changes:</strong></p>"
+        commit.child('modified').forEach(function(changes) {
+          var changeP= document.createElement('p');
+          if(changes.val().indexOf("WikiQuest")!=-1){
+            changeP.className = "unimportant";
+          }
+          changeP.innerHTML= changes.val();
+          chdiv.appendChild(changeP)
+        });
         ndiv.appendChild(h4);
         ndiv.appendChild(commiterDiv);
+        ndiv.appendChild(chdiv);
         document.getElementById('commit').appendChild(ndiv);
       });
     </script>
