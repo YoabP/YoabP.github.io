@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+      img.resize{
+        width:540px; /* you can use % */
+        height: auto;
+        max-width: 100%;
+        border-radius: 20px;
+      }
+    </style>
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Yoab</span> Pizarro
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Yoab Pizarro</h1>
+                        <p class="intro-text">Coding solutions.
+                            <br><span style="font-size: 12px;">Most of the time...</span></p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Me</h2>
+                <p>I'm a computer scientist. Graduated from Tecnológico de Monterrey in December 2016.
+                I speak both English and Spanish fluently, and a tiny bit of esperanto (because why not?).
+                On my free time I enjoy twisty puzzles, juggling, video games and pokémon hunting.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="">
+                    <h2>Projects</h2>
+                    <p>Here are some of the projects I've worked on during my time as a student.</p>
+
+                    <div class = "row">
+                      <h3>Wiki Quest</h3>
+                      <div class= "row">
+                        <div class="col-lg-6">
+                          <img src="img/wiki-quest.jpg" class="resize">
+                        </div>
+                        <div class = "col-lg-6">
+                          <p>
+                            A web based real-time multiplayer game using Angular, NodeJS, websockets and MongoDB.
+                               Abusing the fact that wikipedia is a huge graph of linked pages, the game challenges you
+                               to reach a random page from another using the last amount of links possible. All of this
+                               can be done while competing with others. You can try the concept by using the old version
+                               found <a href="https://yoabp.github.io/WikiQuest/">here</a>.
+                          </p>
+                          <p>
+                            <a href="https://github.com/YoabP/WebDevProject-wikiQuest-" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                          </p>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class = "row">
+                      <h3>Karel Compiler</h3>
+                      <div class= "row">
+                        <div class = "col-lg-6">
+                          <p>
+                            <a href="https://en.wikipedia.org/wiki/Karel_(programming_language)">Karel</a> is a pedagogic language
+                            used to teach programming in a more visual manner. As part of the compilers course I worked on a
+                            javascript implementation. On the course we worked on adding parallel coding functionality to karel.
+                          </p>
+                          <p>
+                            <a href="https://github.com/erosespinola/karel-compiler" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                          </p>
+                        </div>
+                        <div class="col-lg-6">
+                          <img src="img/karel.jpg" class="resize">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class = "row">
+                      <h3>Light Bikes</h3>
+                      <div class= "row">
+                        <div class="col-lg-6">
+                          <p><img src="img/light-bikes.jpg" class="resize"></p>
+                        </div>
+                        <div class = "col-lg-6">
+                          <p>
+                            Real time web multiplayer game using websockets and webgl. Babylon was used as a library for webgl.
+                            A small experiment mimicking the tron bike game.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class = "row">
+                      <h3>Habit Microservice</h3>
+                      <div class= "row">
+                        <div class = "col-lg-12">
+                          <p>
+                            Part of a bigger application. This microservice keeps track of habits on a task and habit building application.
+                            This microservice was built using the MongoDB, NodeJS and Express. It works by exposing a REST API for other
+                            services to use.
+                          </p>
+                          <p>
+                            <a href="https://github.com/YoabP/habits-microservice" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class = "row">
+                      <h3>Cube Simulator</h3>
+                      <div class= "row">
+                        <div class = "col-lg-6">
+                          <p>
+                            Web based game for twisty puzzle entuciast. Keeps track of scores related to each solve: time and moves.
+                            Users can see themselves on leaderboards and share a simulation of their solve. However, the fun in the project
+                            comes from the simulation itself. It defines a puzzle in the most general sense as a set of axises that act
+                            on the pieces in its viccinity, which can be shared with other axis, allowing it to be used to simulate many types of
+                            puzzles.<br>
+                            Server was built using MongoDB, Express and NodeJS. While the simulations uses ThreeJS to interact with WebGL.
+
+                          </p>
+                          <p>
+                            <a href="https://github.com/YoabP/cube-sim/tree/develop" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                          </p>
+                        </div>
+                        <div class="col-lg-6">
+                          <img src="img/cube-sim.jpg" class="resize">
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Me</h2>
+                <p></p>
+                <p><a href="mailto:yoab.pizarro@gmail.com">yoab.pizarro@gmail.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://mx.linkedin.com/in/yoab-pizarro-bbb92779" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linked In</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/YoabP" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Yoab Pizarro 2016</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
